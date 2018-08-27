@@ -12,14 +12,14 @@
 import Foundation
 import AudioKit
 
-class SDSustainer {
+public class SDSustainer {
 
     var instrument: AKPolyphonicNode
     var keyDown: [Bool]
     var isPlaying: [Bool]
     var pedalIsDown: Bool
 
-    required init(_ node: AKPolyphonicNode) {
+    required public init(_ node: AKPolyphonicNode) {
         instrument = node
         keyDown = [Bool]()
         isPlaying = [Bool]()

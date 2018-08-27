@@ -1,4 +1,20 @@
-# AudioKit Synth One
+# AudioKit Synth One Alpha AUv3 version
+
+This is just an ongoing snapshot of the problems I'm encountering. 
+
+And so you know I'm actually working on it too.
+
+Read HowIDidIt.md in SynthOneDSP to see what's up.
+(Essentially, step one is moving the dsp code to a framework that will be shared by the app and the audio unit).
+
+Sorry, it's not working yet.
+
+If you have answers to any of the problems, please contact me.
+
+Gene
+
+
+
 
 ![screenshot](https://audiokitpro.com/wp-content/uploads/2018/04/top3.jpg)
 

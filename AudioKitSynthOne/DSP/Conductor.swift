@@ -7,6 +7,7 @@
 //
 
 import AudioKit
+import SynthOneDSP
 
 protocol S1Control: class {
     var value: Double { get set }
@@ -137,6 +138,7 @@ class Conductor: S1Protocol {
         synth.rampDuration = 0.0 // Handle ramping internally instead of the ramper hack
 
         AudioKit.output = synth
+
 
         do {
             try AudioKit.start()

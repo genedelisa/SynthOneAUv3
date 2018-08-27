@@ -9,6 +9,7 @@
 import AudioKit
 import UIKit
 import Disk
+import SynthOneDSP
 
 protocol EmbeddedViewsDelegate: AnyObject {
     func switchToChildPanel(_ newView: ChildPanel, isOnTop: Bool)

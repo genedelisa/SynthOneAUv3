@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48C3EE7437FA1B1E7916844E /* Pods_AudioKitSynthOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA27CDAC229BF66A1C649B42 /* Pods_AudioKitSynthOne.framework */; };
+		769889B3D255B58F46ABC6A8 /* Pods_AudioKitSynthOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C8C8ED20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework */; };
 		941645CD20B3597300D62851 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941645CC20B3597300D62851 /* NotificationService.swift */; };
 		941645D120B3597300D62851 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 941645CA20B3597300D62851 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		941752BA20E2BD2E0076D953 /* Starter Bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 941752B920E2BD2E0076D953 /* Starter Bank.json */; };
@@ -34,6 +35,51 @@
 		94F694C61F683D5D0061DA5E /* CallbackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F694C51F683D5D0061DA5E /* CallbackButton.swift */; };
 		94FEFEC91F3150D00064EC09 /* SliderTransposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEFEC71F3150D00064EC09 /* SliderTransposeButton.swift */; };
 		A4B6DE5FB88EB0520C4F0937 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0076A913A8D9EB5B5A6C27 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		B0BC56CA20F3877700177817 /* SynthOneDSP.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BC56C820F3877700177817 /* SynthOneDSP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BC56CD20F3877700177817 /* SynthOneDSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BC56C620F3877700177817 /* SynthOneDSP.framework */; };
+		B0BC56CE20F3877700177817 /* SynthOneDSP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0BC56C620F3877700177817 /* SynthOneDSP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0BC56D320F3879900177817 /* S1AudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56F20C530C900DAECCD /* S1AudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BC56D420F3879900177817 /* S1AudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C57020C530C900DAECCD /* S1AudioUnit.mm */; };
+		B0BC56D520F387C100177817 /* S1DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C57620C530C900DAECCD /* S1DSPKernel.mm */; };
+		B0BC56D620F387C100177817 /* S1DSPKernel+destroy.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490E520C649D900FD565A /* S1DSPKernel+destroy.mm */; };
+		B0BC56D720F387C100177817 /* S1DSPKernel+didChanges.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EE20C64E5600FD565A /* S1DSPKernel+didChanges.mm */; };
+		B0BC56D820F387C100177817 /* S1DSPKernel+getSetDependentParameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EC20C64D8C00FD565A /* S1DSPKernel+getSetDependentParameters.mm */; };
+		B0BC56D920F387C100177817 /* S1DSPKernel+getSetSynthParameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EA20C64C8E00FD565A /* S1DSPKernel+getSetSynthParameters.mm */; };
+		B0BC56DA20F387C100177817 /* S1DSPKernel+MIDI.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490E820C64AC600FD565A /* S1DSPKernel+MIDI.mm */; };
+		B0BC56DB20F387C100177817 /* S1DSPKernel+parameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F420C6542500FD565A /* S1DSPKernel+parameters.mm */; };
+		B0BC56DC20F387C100177817 /* S1DSPKernel+process.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F220C6539200FD565A /* S1DSPKernel+process.mm */; };
+		B0BC56DD20F387C100177817 /* S1DSPKernel+reset.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F620C654E600FD565A /* S1DSPKernel+reset.mm */; };
+		B0BC56DE20F387C100177817 /* S1DSPKernel+setup.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F820C655AF00FD565A /* S1DSPKernel+setup.mm */; };
+		B0BC56DF20F387C100177817 /* S1DSPKernel+startStopNotes.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490FA20C6560000FD565A /* S1DSPKernel+startStopNotes.mm */; };
+		B0BC56E020F387C100177817 /* S1DSPKernel+tapers.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F020C64ED200FD565A /* S1DSPKernel+tapers.mm */; };
+		B0BC56E120F387C100177817 /* S1DSPKernel+toggleKeys.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490FC20C6564D00FD565A /* S1DSPKernel+toggleKeys.mm */; };
+		B0BC56E220F387C600177817 /* S1DSPKernel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C435C57720C530C900DAECCD /* S1DSPKernel.hpp */; };
+		B0BC56E320F387DF00177817 /* S1NoteState.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C56D20C530C900DAECCD /* S1NoteState.mm */; };
+		B0BC56E420F387E300177817 /* S1NoteState.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C435C56C20C530C900DAECCD /* S1NoteState.hpp */; };
+		B0BC56E520F387EF00177817 /* AKSynthOneRate.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C58D20C5336600DAECCD /* AKSynthOneRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BC56E620F387F400177817 /* S1Rate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C435C58C20C5336600DAECCD /* S1Rate.hpp */; };
+		B0BC56E720F3880000177817 /* AEWeakRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55820C530C900DAECCD /* AEWeakRetainingProxy.m */; };
+		B0BC56E820F3880000177817 /* AEMessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55920C530C900DAECCD /* AEMessageQueue.m */; };
+		B0BC56E920F3880000177817 /* AEManagedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55A20C530C900DAECCD /* AEManagedValue.m */; };
+		B0BC56EA20F3880D00177817 /* AEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55F20C530C900DAECCD /* AEUtilities.m */; };
+		B0BC56EB20F3880D00177817 /* AETime.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56420C530C900DAECCD /* AETime.m */; };
+		B0BC56EC20F3880D00177817 /* AETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56620C530C900DAECCD /* AETypes.m */; };
+		B0BC56ED20F3880D00177817 /* AEMainThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56720C530C900DAECCD /* AEMainThreadEndpoint.m */; };
+		B0BC56EE20F3880D00177817 /* AEAudioThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56920C530C900DAECCD /* AEAudioThreadEndpoint.m */; };
+		B0BC56EF20F3881900177817 /* AETime.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C55B20C530C900DAECCD /* AETime.h */; };
+		B0BC56F020F3881F00177817 /* AEAudioThreadEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C55C20C530C900DAECCD /* AEAudioThreadEndpoint.h */; };
+		B0BC56F120F3882300177817 /* AEMainThreadEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C55E20C530C900DAECCD /* AEMainThreadEndpoint.h */; };
+		B0BC56F220F3882B00177817 /* AETypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56020C530C900DAECCD /* AETypes.h */; };
+		B0BC56F320F3882B00177817 /* AEWeakRetainingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56120C530C900DAECCD /* AEWeakRetainingProxy.h */; };
+		B0BC56F420F3882B00177817 /* AEManagedValue.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56220C530C900DAECCD /* AEManagedValue.h */; };
+		B0BC56F520F3882B00177817 /* AEMessageQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56320C530C900DAECCD /* AEMessageQueue.h */; };
+		B0BC56F620F3883000177817 /* AEArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56820C530C900DAECCD /* AEArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BC56F720F388DE00177817 /* AKSynthOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C55420C530C900DAECCD /* AKSynthOne.swift */; };
+		B0BC56F820F388E800177817 /* SDSustainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C55620C530C900DAECCD /* SDSustainer.swift */; };
+		B0BC56F920F388F700177817 /* S1Parameter.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C55320C530C900DAECCD /* S1Parameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0BC56FC20F3BD9600177817 /* AEArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55D20C530C900DAECCD /* AEArray.m */; };
+		B0BC56FD20F3BDAD00177817 /* AEUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C435C56520C530C900DAECCD /* AEUtilities.h */; };
+		B0C8C8EE20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C8C8ED20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework */; };
 		C432979120CB2AA00063F795 /* Presets+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C432979020CB2AA00063F795 /* Presets+UITextViewDelegate.swift */; };
 		C432979320CB2BB20063F795 /* Presets+LoadSaveManipulate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C432979220CB2BB20063F795 /* Presets+LoadSaveManipulate.swift */; };
 		C432979520CB2D620063F795 /* Manager+callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C432979420CB2D620063F795 /* Manager+callbacks.swift */; };
@@ -59,33 +105,7 @@
 		C435C53220C52D4C00DAECCD /* Tunings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C52E20C52D4B00DAECCD /* Tunings.swift */; };
 		C435C53320C52D4C00DAECCD /* Tunings+Harmonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C52F20C52D4B00DAECCD /* Tunings+Harmonic.swift */; };
 		C435C57820C530C900DAECCD /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C55120C530C900DAECCD /* Conductor.swift */; };
-		C435C57920C530C900DAECCD /* AKSynthOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C55420C530C900DAECCD /* AKSynthOne.swift */; };
-		C435C57A20C530C900DAECCD /* SDSustainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C435C55620C530C900DAECCD /* SDSustainer.swift */; };
-		C435C57B20C530C900DAECCD /* AEWeakRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55820C530C900DAECCD /* AEWeakRetainingProxy.m */; };
-		C435C57C20C530C900DAECCD /* AEMessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55920C530C900DAECCD /* AEMessageQueue.m */; };
-		C435C57D20C530C900DAECCD /* AEManagedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55A20C530C900DAECCD /* AEManagedValue.m */; };
-		C435C57E20C530C900DAECCD /* AEArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55D20C530C900DAECCD /* AEArray.m */; };
-		C435C57F20C530C900DAECCD /* AEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C55F20C530C900DAECCD /* AEUtilities.m */; };
-		C435C58020C530C900DAECCD /* AETime.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56420C530C900DAECCD /* AETime.m */; };
-		C435C58120C530C900DAECCD /* AETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56620C530C900DAECCD /* AETypes.m */; };
-		C435C58220C530C900DAECCD /* AEMainThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56720C530C900DAECCD /* AEMainThreadEndpoint.m */; };
-		C435C58320C530C900DAECCD /* AEAudioThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C435C56920C530C900DAECCD /* AEAudioThreadEndpoint.m */; };
-		C435C58420C530C900DAECCD /* S1NoteState.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C56D20C530C900DAECCD /* S1NoteState.mm */; };
-		C435C58520C530C900DAECCD /* S1AudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C57020C530C900DAECCD /* S1AudioUnit.mm */; };
-		C435C58920C530C900DAECCD /* S1DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = C435C57620C530C900DAECCD /* S1DSPKernel.mm */; };
 		C47FB3C31F36694300EF2F01 /* RateKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FB3C21F36694300EF2F01 /* RateKnob.swift */; };
-		C4B490E720C649D900FD565A /* S1DSPKernel+destroy.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490E520C649D900FD565A /* S1DSPKernel+destroy.mm */; };
-		C4B490E920C64AC600FD565A /* S1DSPKernel+MIDI.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490E820C64AC600FD565A /* S1DSPKernel+MIDI.mm */; };
-		C4B490EB20C64C8E00FD565A /* S1DSPKernel+getSetSynthParameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EA20C64C8E00FD565A /* S1DSPKernel+getSetSynthParameters.mm */; };
-		C4B490ED20C64D8C00FD565A /* S1DSPKernel+getSetDependentParameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EC20C64D8C00FD565A /* S1DSPKernel+getSetDependentParameters.mm */; };
-		C4B490EF20C64E5600FD565A /* S1DSPKernel+didChanges.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490EE20C64E5600FD565A /* S1DSPKernel+didChanges.mm */; };
-		C4B490F120C64ED300FD565A /* S1DSPKernel+tapers.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F020C64ED200FD565A /* S1DSPKernel+tapers.mm */; };
-		C4B490F320C6539200FD565A /* S1DSPKernel+process.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F220C6539200FD565A /* S1DSPKernel+process.mm */; };
-		C4B490F520C6542500FD565A /* S1DSPKernel+parameters.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F420C6542500FD565A /* S1DSPKernel+parameters.mm */; };
-		C4B490F720C654E600FD565A /* S1DSPKernel+reset.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F620C654E600FD565A /* S1DSPKernel+reset.mm */; };
-		C4B490F920C655AF00FD565A /* S1DSPKernel+setup.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490F820C655AF00FD565A /* S1DSPKernel+setup.mm */; };
-		C4B490FB20C6560000FD565A /* S1DSPKernel+startStopNotes.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490FA20C6560000FD565A /* S1DSPKernel+startStopNotes.mm */; };
-		C4B490FD20C6564D00FD565A /* S1DSPKernel+toggleKeys.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4B490FC20C6564D00FD565A /* S1DSPKernel+toggleKeys.mm */; };
 		C4B4910520C7C5C500FD565A /* ArpDirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4910020C7C5C500FD565A /* ArpDirectionButton.swift */; };
 		C4B4910720C7C5C500FD565A /* ArpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4910220C7C5C500FD565A /* ArpButton.swift */; };
 		C4B4910920C7C5C500FD565A /* SequencerPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4910420C7C5C500FD565A /* SequencerPanelController.swift */; };
@@ -158,6 +178,7 @@
 		C4B491C320C7DF2A00FD565A /* LFOPickerStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B491C120C7DF2A00FD565A /* LFOPickerStyleKit.swift */; };
 		C4B491C520C7EC2E00FD565A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C4B491C420C7EC2E00FD565A /* README.md */; };
 		C4B9C02B201D54D400D9833D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B9C02A201D54D400D9833D /* AudioToolbox.framework */; };
+		C4CCBE6ABE6AF6C6A2A9CCC2 /* Pods_SynthOneDSP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570FD97734F32673D8D77AA /* Pods_SynthOneDSP.framework */; };
 		C4D193C81F1187B500FF4FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D193C71F1187B500FF4FE4 /* AppDelegate.swift */; };
 		C4D193CD1F1187B500FF4FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D193CB1F1187B500FF4FE4 /* Main.storyboard */; };
 		C4D193CF1F1187B500FF4FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D193CE1F1187B500FF4FE4 /* Assets.xcassets */; };
@@ -176,9 +197,27 @@
 			remoteGlobalIDString = 941645C920B3597300D62851;
 			remoteInfo = OneSignalNotificationServiceExtension;
 		};
+		B0BC56CB20F3877700177817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D193BC1F1187B500FF4FE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0BC56C520F3877700177817;
+			remoteInfo = SynthOneDSP;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B0BC56D220F3877700177817 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0BC56CE20F3877700177817 /* SynthOneDSP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C474D95D1F13172B00946035 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,8 +232,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0570FD97734F32673D8D77AA /* Pods_SynthOneDSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SynthOneDSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A319653D44EC41DAFAEB963 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		51EC225D22B5EE94B01AA474 /* Pods-AudioKitSynthOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitSynthOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitSynthOne/Pods-AudioKitSynthOne.debug.xcconfig"; sourceTree = "<group>"; };
+		86B1FBD9E45836E976D3D731 /* Pods-SynthOneDSP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SynthOneDSP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SynthOneDSP/Pods-SynthOneDSP.debug.xcconfig"; sourceTree = "<group>"; };
 		941645CA20B3597300D62851 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		941645CC20B3597300D62851 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		941645CE20B3597300D62851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,7 +265,14 @@
 		94E951341F3644E5009A8B00 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
 		94F694C51F683D5D0061DA5E /* CallbackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackButton.swift; sourceTree = "<group>"; };
 		94FEFEC71F3150D00064EC09 /* SliderTransposeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTransposeButton.swift; sourceTree = "<group>"; };
+		B0BC56C620F3877700177817 /* SynthOneDSP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SynthOneDSP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BC56C820F3877700177817 /* SynthOneDSP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthOneDSP.h; sourceTree = "<group>"; };
+		B0BC56C920F3877700177817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BC56FA20F38A5500177817 /* AudioKitSynthOne-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AudioKitSynthOne-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0BC56FB20F3937000177817 /* HowIDidIt.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HowIDidIt.md; sourceTree = "<group>"; };
+		B0C8C8ED20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AudioKitSynthOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA27CDAC229BF66A1C649B42 /* Pods_AudioKitSynthOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKitSynthOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37E787D0D7C0E1288D3EF1C /* Pods-SynthOneDSP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SynthOneDSP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SynthOneDSP/Pods-SynthOneDSP.release.xcconfig"; sourceTree = "<group>"; };
 		C40CBA2620CDE2B000A8245F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C40CBA2720CDE72500A8245F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C40CBA2820CDE7DA00A8245F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -399,12 +447,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0BC56C220F3877700177817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C8C8EE20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework in Frameworks */,
+				C4CCBE6ABE6AF6C6A2A9CCC2 /* Pods_SynthOneDSP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4D193C11F1187B500FF4FE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				48C3EE7437FA1B1E7916844E /* Pods_AudioKitSynthOne.framework in Frameworks */,
+				B0BC56CD20F3877700177817 /* SynthOneDSP.framework in Frameworks */,
 				C4B9C02B201D54D400D9833D /* AudioToolbox.framework in Frameworks */,
+				769889B3D255B58F46ABC6A8 /* Pods_AudioKitSynthOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +477,8 @@
 				E2883EE9358887836A57FE08 /* Pods-AudioKitSynthOne.release.xcconfig */,
 				3A319653D44EC41DAFAEB963 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				D96BC33C5D07149EC2FAB8CE /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				86B1FBD9E45836E976D3D731 /* Pods-SynthOneDSP.debug.xcconfig */,
+				C37E787D0D7C0E1288D3EF1C /* Pods-SynthOneDSP.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -457,9 +518,11 @@
 		9461F0371F5CAAE600EE226E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0C8C8ED20F3E9AE00526EB2 /* Pods_AudioKitSynthOne.framework */,
 				C4B9C02A201D54D400D9833D /* AudioToolbox.framework */,
 				BA27CDAC229BF66A1C649B42 /* Pods_AudioKitSynthOne.framework */,
 				CB0076A913A8D9EB5B5A6C27 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				0570FD97734F32673D8D77AA /* Pods_SynthOneDSP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -481,6 +544,24 @@
 				94A6F30C1F687F3E007B083C /* icon_320.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		B0BC56C720F3877700177817 /* SynthOneDSP */ = {
+			isa = PBXGroup;
+			children = (
+				B0BC56FB20F3937000177817 /* HowIDidIt.md */,
+				B0BC56C820F3877700177817 /* SynthOneDSP.h */,
+				B0BC56C920F3877700177817 /* Info.plist */,
+				C435C55420C530C900DAECCD /* AKSynthOne.swift */,
+				C435C55320C530C900DAECCD /* S1Parameter.h */,
+				C435C55620C530C900DAECCD /* SDSustainer.swift */,
+				C435C56E20C530C900DAECCD /* Audio Unit */,
+				C435C57520C530C900DAECCD /* Kernel */,
+				C435C56B20C530C900DAECCD /* Note State */,
+				C435C58B20C5336600DAECCD /* Rate */,
+				C435C55720C530C900DAECCD /* TAAE */,
+			);
+			path = SynthOneDSP;
 			sourceTree = "<group>";
 		};
 		C432978720C896250063F795 /* About */ = {
@@ -637,15 +718,7 @@
 			isa = PBXGroup;
 			children = (
 				F437E99E20EB22D00096FEAC /* README.md */,
-				C435C55420C530C900DAECCD /* AKSynthOne.swift */,
 				C435C55120C530C900DAECCD /* Conductor.swift */,
-				C435C55320C530C900DAECCD /* S1Parameter.h */,
-				C435C55620C530C900DAECCD /* SDSustainer.swift */,
-				C435C56E20C530C900DAECCD /* Audio Unit */,
-				C435C57520C530C900DAECCD /* Kernel */,
-				C435C56B20C530C900DAECCD /* Note State */,
-				C435C58B20C5336600DAECCD /* Rate */,
-				C435C55720C530C900DAECCD /* TAAE */,
 			);
 			path = DSP;
 			sourceTree = "<group>";
@@ -913,6 +986,7 @@
 			children = (
 				C435C4D620C511DB00DAECCD /* README.md */,
 				C4D193C61F1187B500FF4FE4 /* AudioKitSynthOne */,
+				B0BC56C720F3877700177817 /* SynthOneDSP */,
 				9461F0371F5CAAE600EE226E /* Frameworks */,
 				941645CB20B3597300D62851 /* OneSignalNotificationServiceExtension */,
 				54056ADC83E937067BBBA387 /* Pods */,
@@ -925,6 +999,7 @@
 			children = (
 				C4D193C41F1187B500FF4FE4 /* AudioKitSynthOne.app */,
 				941645CA20B3597300D62851 /* OneSignalNotificationServiceExtension.appex */,
+				B0BC56C620F3877700177817 /* SynthOneDSP.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -932,6 +1007,7 @@
 		C4D193C61F1187B500FF4FE4 /* AudioKitSynthOne */ = {
 			isa = PBXGroup;
 			children = (
+				B0BC56FA20F38A5500177817 /* AudioKitSynthOne-Bridging-Header.h */,
 				C40CBA2620CDE2B000A8245F /* README.md */,
 				94780FEF1F9B0108006D3710 /* AudioKitSynthOne.entitlements */,
 				C4D193D31F1187B500FF4FE4 /* Info.plist */,
@@ -974,6 +1050,32 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B0BC56C320F3877700177817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BC56E520F387EF00177817 /* AKSynthOneRate.h in Headers */,
+				B0BC56E420F387E300177817 /* S1NoteState.hpp in Headers */,
+				B0BC56CA20F3877700177817 /* SynthOneDSP.h in Headers */,
+				B0BC56F520F3882B00177817 /* AEMessageQueue.h in Headers */,
+				B0BC56EF20F3881900177817 /* AETime.h in Headers */,
+				B0BC56FD20F3BDAD00177817 /* AEUtilities.h in Headers */,
+				B0BC56D320F3879900177817 /* S1AudioUnit.h in Headers */,
+				B0BC56E620F387F400177817 /* S1Rate.hpp in Headers */,
+				B0BC56F420F3882B00177817 /* AEManagedValue.h in Headers */,
+				B0BC56F620F3883000177817 /* AEArray.h in Headers */,
+				B0BC56F220F3882B00177817 /* AETypes.h in Headers */,
+				B0BC56F320F3882B00177817 /* AEWeakRetainingProxy.h in Headers */,
+				B0BC56F020F3881F00177817 /* AEAudioThreadEndpoint.h in Headers */,
+				B0BC56E220F387C600177817 /* S1DSPKernel.hpp in Headers */,
+				B0BC56F120F3882300177817 /* AEMainThreadEndpoint.h in Headers */,
+				B0BC56F920F388F700177817 /* S1Parameter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		941645C920B3597300D62851 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
@@ -983,7 +1085,6 @@
 				941645C620B3597300D62851 /* Sources */,
 				941645C720B3597300D62851 /* Frameworks */,
 				941645C820B3597300D62851 /* Resources */,
-				3B934ABEB8F4F4E2365BC771 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -993,6 +1094,25 @@
 			productName = OneSignalNotificationServiceExtension;
 			productReference = 941645CA20B3597300D62851 /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		B0BC56C520F3877700177817 /* SynthOneDSP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0BC56D120F3877700177817 /* Build configuration list for PBXNativeTarget "SynthOneDSP" */;
+			buildPhases = (
+				F4BF48C7346890ADB100AF26 /* [CP] Check Pods Manifest.lock */,
+				B0BC56C120F3877700177817 /* Sources */,
+				B0BC56C220F3877700177817 /* Frameworks */,
+				B0BC56C320F3877700177817 /* Headers */,
+				B0BC56C420F3877700177817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynthOneDSP;
+			productName = SynthOneDSP;
+			productReference = B0BC56C620F3877700177817 /* SynthOneDSP.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		C4D193C31F1187B500FF4FE4 /* AudioKitSynthOne */ = {
 			isa = PBXNativeTarget;
@@ -1005,12 +1125,13 @@
 				A02F99CB702A38B4BC2953CB /* [CP] Embed Pods Frameworks */,
 				C474D95D1F13172B00946035 /* Embed App Extensions */,
 				C4421AA920B81D0500BE9F12 /* ShellScript */,
-				B01F67E91D126F4EC45E5B5B /* [CP] Copy Pods Resources */,
+				B0BC56D220F3877700177817 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				941645D020B3597300D62851 /* PBXTargetDependency */,
+				B0BC56CC20F3877700177817 /* PBXTargetDependency */,
 			);
 			name = AudioKitSynthOne;
 			productName = AudioKitSynthOne;
@@ -1024,11 +1145,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = AudioKit;
 				TargetAttributes = {
 					941645C920B3597300D62851 = {
 						CreatedOnToolsVersion = 9.3.1;
+						DevelopmentTeam = 9W69ZP8S5F;
+						ProvisioningStyle = Automatic;
+					};
+					B0BC56C520F3877700177817 = {
+						CreatedOnToolsVersion = 9.4.1;
 						DevelopmentTeam = 9W69ZP8S5F;
 						ProvisioningStyle = Automatic;
 					};
@@ -1069,12 +1195,20 @@
 			targets = (
 				C4D193C31F1187B500FF4FE4 /* AudioKitSynthOne */,
 				941645C920B3597300D62851 /* OneSignalNotificationServiceExtension */,
+				B0BC56C520F3877700177817 /* SynthOneDSP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		941645C820B3597300D62851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BC56C420F3877700177817 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1106,21 +1240,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B934ABEB8F4F4E2365BC771 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		49E9B8C03D2127F41FFB0052 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1159,21 +1278,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioKitSynthOne/Pods-AudioKitSynthOne-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B01F67E91D126F4EC45E5B5B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioKitSynthOne/Pods-AudioKitSynthOne-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C4421AA920B81D0500BE9F12 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1205,6 +1309,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F4BF48C7346890ADB100AF26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SynthOneDSP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1213,6 +1335,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				941645CD20B3597300D62851 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0BC56C120F3877700177817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BC56D620F387C100177817 /* S1DSPKernel+destroy.mm in Sources */,
+				B0BC56ED20F3880D00177817 /* AEMainThreadEndpoint.m in Sources */,
+				B0BC56E020F387C100177817 /* S1DSPKernel+tapers.mm in Sources */,
+				B0BC56E720F3880000177817 /* AEWeakRetainingProxy.m in Sources */,
+				B0BC56DC20F387C100177817 /* S1DSPKernel+process.mm in Sources */,
+				B0BC56DD20F387C100177817 /* S1DSPKernel+reset.mm in Sources */,
+				B0BC56D920F387C100177817 /* S1DSPKernel+getSetSynthParameters.mm in Sources */,
+				B0BC56DA20F387C100177817 /* S1DSPKernel+MIDI.mm in Sources */,
+				B0BC56EC20F3880D00177817 /* AETypes.m in Sources */,
+				B0BC56E820F3880000177817 /* AEMessageQueue.m in Sources */,
+				B0BC56EB20F3880D00177817 /* AETime.m in Sources */,
+				B0BC56D520F387C100177817 /* S1DSPKernel.mm in Sources */,
+				B0BC56DE20F387C100177817 /* S1DSPKernel+setup.mm in Sources */,
+				B0BC56FC20F3BD9600177817 /* AEArray.m in Sources */,
+				B0BC56F820F388E800177817 /* SDSustainer.swift in Sources */,
+				B0BC56DB20F387C100177817 /* S1DSPKernel+parameters.mm in Sources */,
+				B0BC56E320F387DF00177817 /* S1NoteState.mm in Sources */,
+				B0BC56D720F387C100177817 /* S1DSPKernel+didChanges.mm in Sources */,
+				B0BC56EA20F3880D00177817 /* AEUtilities.m in Sources */,
+				B0BC56E920F3880000177817 /* AEManagedValue.m in Sources */,
+				B0BC56EE20F3880D00177817 /* AEAudioThreadEndpoint.m in Sources */,
+				B0BC56DF20F387C100177817 /* S1DSPKernel+startStopNotes.mm in Sources */,
+				B0BC56D820F387C100177817 /* S1DSPKernel+getSetDependentParameters.mm in Sources */,
+				B0BC56E120F387C100177817 /* S1DSPKernel+toggleKeys.mm in Sources */,
+				B0BC56D420F3879900177817 /* S1AudioUnit.mm in Sources */,
+				B0BC56F720F388DE00177817 /* AKSynthOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,31 +1380,23 @@
 				C4B491A720C7C95A00FD565A /* GeneratorsPanelController.swift in Sources */,
 				947956AD1F329AB200FE5D9B /* StepperStyleKit.swift in Sources */,
 				C4B491AF20C7D10200FD565A /* LFOWavePicker.swift in Sources */,
-				C4B490F720C654E600FD565A /* S1DSPKernel+reset.mm in Sources */,
-				C435C58420C530C900DAECCD /* S1NoteState.mm in Sources */,
 				C4B4915220C7C6FC00FD565A /* Manager+MIDISettingsPopOverDelegate.swift in Sources */,
 				C4B4915820C7C70D00FD565A /* TuningsPitchWheelView.swift in Sources */,
-				C435C58320C530C900DAECCD /* AEAudioThreadEndpoint.m in Sources */,
 				C4B4917B20C7C75500FD565A /* HeaderViewContoller.swift in Sources */,
 				C4B4919920C7C81200FD565A /* MailingListViewController.swift in Sources */,
 				C4B4916920C7C72A00FD565A /* ChildPanel.swift in Sources */,
-				C435C57B20C530C900DAECCD /* AEWeakRetainingProxy.m in Sources */,
 				C4B491B520C7D19F00FD565A /* TempoStepper.swift in Sources */,
-				C435C58220C530C900DAECCD /* AEMainThreadEndpoint.m in Sources */,
 				C4F7ECB71F244A510011B119 /* KnobStyleKit.swift in Sources */,
 				C4B491BD20C7DEB100FD565A /* SliderStyleKit.swift in Sources */,
 				C4B491AC20C7D10200FD565A /* MorphSelector.swift in Sources */,
 				C4F7ECAF1F244A4B0011B119 /* ToggleButtonStyleKit.swift in Sources */,
 				C435C52A20C52D2F00DAECCD /* MIDILearnable.swift in Sources */,
-				C4B490EB20C64C8E00FD565A /* S1DSPKernel+getSetSynthParameters.mm in Sources */,
 				C4B4911C20C7C62A00FD565A /* Manager+Keyboard.swift in Sources */,
 				C4B4913C20C7C6A000FD565A /* AKTouchPadView.swift in Sources */,
-				C435C58920C530C900DAECCD /* S1DSPKernel.mm in Sources */,
 				C4B4916C20C7C72A00FD565A /* AboutViewController.swift in Sources */,
 				94DB18CF1F37D7EE008368AE /* NavButtonStyleKit.swift in Sources */,
 				C435C51D20C52D1700DAECCD /* PresetDataManager.swift in Sources */,
 				C435C52920C52D2F00DAECCD /* MIDIInput.swift in Sources */,
-				C435C58120C530C900DAECCD /* AETypes.m in Sources */,
 				C4B4915020C7C6FC00FD565A /* Manager+MIDIListener.swift in Sources */,
 				C4B4912020C7C62A00FD565A /* WheelSettingsViewController.swift in Sources */,
 				9489EF631F3145ED00416F26 /* VerticalSlider.swift in Sources */,
@@ -1263,15 +1410,11 @@
 				947956B61F32A72400FE5D9B /* ToggleSwitch.swift in Sources */,
 				C4B4916D20C7C72A00FD565A /* Manager+EmbeddedViewsDelegate.swift in Sources */,
 				C4F7ECB81F244A510011B119 /* ToggleButton.swift in Sources */,
-				C435C57F20C530C900DAECCD /* AEUtilities.m in Sources */,
-				C435C57920C530C900DAECCD /* AKSynthOne.swift in Sources */,
 				C4B4914020C7C6A000FD565A /* TouchPointStyleKit.swift in Sources */,
 				C435C4F820C5234900DAECCD /* CategoryCell.swift in Sources */,
 				C435C53120C52D4C00DAECCD /* Tunings+Math.swift in Sources */,
-				C435C58520C530C900DAECCD /* S1AudioUnit.mm in Sources */,
 				C4B4919020C7C7B200FD565A /* BankEditorViewController.swift in Sources */,
 				C4B4915120C7C6FC00FD565A /* MIDISettingsViewController.swift in Sources */,
-				C435C57E20C530C900DAECCD /* AEArray.m in Sources */,
 				C4B4918820C7C79C00FD565A /* Presets+PresetPopOverDelegate.swift in Sources */,
 				C435C50320C5286C00DAECCD /* Helpers.swift in Sources */,
 				C435C51E20C52D1700DAECCD /* Bank.swift in Sources */,
@@ -1281,20 +1424,15 @@
 				C4B4919320C7C7C500FD565A /* PresetsCategoriesViewController.swift in Sources */,
 				C432979720CB2E090063F795 /* Manager+Navigation.swift in Sources */,
 				C4B4911D20C7C62A00FD565A /* KeyboardView.swift in Sources */,
-				C4B490ED20C64D8C00FD565A /* S1DSPKernel+getSetDependentParameters.mm in Sources */,
 				C4B491C320C7DF2A00FD565A /* LFOPickerStyleKit.swift in Sources */,
 				C4B4918720C7C79C00FD565A /* Presets+CategoryDelegate.swift in Sources */,
-				C4B490EF20C64E5600FD565A /* S1DSPKernel+didChanges.mm in Sources */,
 				C432979520CB2D620063F795 /* Manager+callbacks.swift in Sources */,
 				C4B4916B20C7C72A00FD565A /* InfoViewController.swift in Sources */,
 				948D33A91F4DFC08006E8276 /* FilterTypeButton.swift in Sources */,
 				94FEFEC91F3150D00064EC09 /* SliderTransposeButton.swift in Sources */,
 				C4B4914820C7C6E300FD565A /* Audiobus.swift in Sources */,
 				C4B4917920C7C75500FD565A /* Manager+HeaderDelegate.swift in Sources */,
-				C4B490F320C6539200FD565A /* S1DSPKernel+process.mm in Sources */,
 				C4B4916E20C7C72A00FD565A /* Manager.swift in Sources */,
-				C4B490E920C64AC600FD565A /* S1DSPKernel+MIDI.mm in Sources */,
-				C4B490E720C649D900FD565A /* S1DSPKernel+destroy.mm in Sources */,
 				949D93B91F2C188C007E657B /* LFOToggle.swift in Sources */,
 				C435C4FB20C5234900DAECCD /* PresetCell.swift in Sources */,
 				C4B4915B20C7C70D00FD565A /* TuningsPanelController.swift in Sources */,
@@ -1303,8 +1441,6 @@
 				C4B4914120C7C6A000FD565A /* TouchPoint.swift in Sources */,
 				C4B4918920C7C79C00FD565A /* Presets+UITableViewDataSource.swift in Sources */,
 				C4F7ECB51F244A510011B119 /* Knob+Touches.swift in Sources */,
-				C4B490FB20C6560000FD565A /* S1DSPKernel+startStopNotes.mm in Sources */,
-				C435C57D20C530C900DAECCD /* AEManagedValue.m in Sources */,
 				C4B4913D20C7C6A000FD565A /* AKVerticalPad.swift in Sources */,
 				C4B4918520C7C79C00FD565A /* PresetsViewController.swift in Sources */,
 				C4B4919B20C7C8C800FD565A /* Manager+ModWheelDelegate.swift in Sources */,
@@ -1314,20 +1450,16 @@
 				C4B491BC20C7DEB100FD565A /* ArpButtonStyleKit.swift in Sources */,
 				C4B4919420C7C7C500FD565A /* PresetEditorViewController.swift in Sources */,
 				C4B4918620C7C79C00FD565A /* Presets+PresetCellDelegate.swift in Sources */,
-				C435C57A20C530C900DAECCD /* SDSustainer.swift in Sources */,
-				C435C58020C530C900DAECCD /* AETime.m in Sources */,
 				C4B4915A20C7C70D00FD565A /* TuningsPanel+UITableViewDataSource.swift in Sources */,
 				C435C4FA20C5234900DAECCD /* TuningCell.swift in Sources */,
 				94656AED205F410900634B2C /* KeyboardShowButton.swift in Sources */,
 				947956A91F329AB200FE5D9B /* Stepper.swift in Sources */,
 				C4B491A420C7C94E00FD565A /* EffectsPanelController.swift in Sources */,
 				C432979120CB2AA00063F795 /* Presets+UITextViewDelegate.swift in Sources */,
-				C4B490F120C64ED300FD565A /* S1DSPKernel+tapers.mm in Sources */,
 				C4B4915920C7C70D00FD565A /* TuningsPanel+UITableViewDelegate.swift in Sources */,
 				C435C4F920C5234900DAECCD /* MIDICell.swift in Sources */,
 				94A5039D1FF2F6E30097D37C /* ChannelStepper.swift in Sources */,
 				C4D193C81F1187B500FF4FE4 /* AppDelegate.swift in Sources */,
-				C4B490F920C655AF00FD565A /* S1DSPKernel+setup.mm in Sources */,
 				C4B4911E20C7C62A00FD565A /* BlackKeyStyleKit.swift in Sources */,
 				C4B4910D20C7C5E500FD565A /* AppSettings.swift in Sources */,
 				C4B4913F20C7C6A000FD565A /* TouchPadPanelController.swift in Sources */,
@@ -1341,7 +1473,6 @@
 				94D917AF1F550D28006ACB4E /* FlatToggleButton.swift in Sources */,
 				C4B4914920C7C6E300FD565A /* Manager+Audiobus.swift in Sources */,
 				C4B4918B20C7C79C00FD565A /* Presets+BankPopOverDelegate.swift in Sources */,
-				C4B490FD20C6564D00FD565A /* S1DSPKernel+toggleKeys.mm in Sources */,
 				948C54C31F3A57C600DA6081 /* SynthButton.swift in Sources */,
 				C4F7ECB61F244A510011B119 /* Knob.swift in Sources */,
 				C4B491C220C7DF2A00FD565A /* MorphSelectorStyleKit.swift in Sources */,
@@ -1353,10 +1484,8 @@
 				C4B4916720C7C72A00FD565A /* PanelController.swift in Sources */,
 				C4B491BE20C7DEB100FD565A /* ArpDirectionStyleKit.swift in Sources */,
 				C4B4916A20C7C72A00FD565A /* UpdatableViewController.swift in Sources */,
-				C435C57C20C530C900DAECCD /* AEMessageQueue.m in Sources */,
 				C4B4910520C7C5C500FD565A /* ArpDirectionButton.swift in Sources */,
 				C435C57820C530C900DAECCD /* Conductor.swift in Sources */,
-				C4B490F520C6542500FD565A /* S1DSPKernel+parameters.mm in Sources */,
 				C4B4912220C7C65000FD565A /* ModWheelStyleKit.swift in Sources */,
 				C4B4918E20C7C7A400FD565A /* Manager+PresetsDelegate.swift in Sources */,
 			);
@@ -1369,6 +1498,11 @@
 			isa = PBXTargetDependency;
 			target = 941645C920B3597300D62851 /* OneSignalNotificationServiceExtension */;
 			targetProxy = 941645CF20B3597300D62851 /* PBXContainerItemProxy */;
+		};
+		B0BC56CC20F3877700177817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0BC56C520F3877700177817 /* SynthOneDSP */;
+			targetProxy = B0BC56CB20F3877700177817 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1403,6 +1537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiokitpro.AudioKitSynthOne.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1427,8 +1562,95 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiokitpro.AudioKitSynthOne.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0BC56CF20F3877700177817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B1FBD9E45836E976D3D731 /* Pods-SynthOneDSP.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9W69ZP8S5F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+					"$(inherit)",
+				);
+				INFOPLIST_FILE = SynthOneDSP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Audiobus\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiokitpro.SynthOneDSP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0BC56D020F3877700177817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37E787D0D7C0E1288D3EF1C /* Pods-SynthOneDSP.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9W69ZP8S5F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)",
+					"$(inherit)",
+				);
+				INFOPLIST_FILE = SynthOneDSP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Audiobus\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.audiokitpro.SynthOneDSP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1494,6 +1716,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/DSP/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-incomplete-umbrella";
 			};
@@ -1553,6 +1776,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/DSP/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = "-Wno-incomplete-umbrella";
@@ -1563,6 +1787,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51EC225D22B5EE94B01AA474 /* Pods-AudioKitSynthOne.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -1579,7 +1804,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/DSP/AudioKitSynthOne-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1590,6 +1815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2883EE9358887836A57FE08 /* Pods-AudioKitSynthOne.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -1606,7 +1832,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/DSP/AudioKitSynthOne-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AudioKitSynthOne/AudioKitSynthOne-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1620,6 +1846,15 @@
 			buildConfigurations = (
 				941645D320B3597300D62851 /* Debug */,
 				941645D420B3597300D62851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0BC56D120F3877700177817 /* Build configuration list for PBXNativeTarget "SynthOneDSP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0BC56CF20F3877700177817 /* Debug */,
+				B0BC56D020F3877700177817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
